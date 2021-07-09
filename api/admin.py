@@ -4,7 +4,7 @@ from .models import Game
 
 
 class GameAdmin(admin.ModelAdmin):
-    list = ('code', 'name', 'description')
+    list = ('name', 'description')
 
 
 admin.site.register(Game, GameAdmin)
